@@ -38,7 +38,7 @@ async function runTest() {
         // Capturar una captura de pantalla
         await driver.takeScreenshot().then(
             function(image, err) {
-                require('fs').writeFileSync(`screenshot${Math.random()}.png`, image, 'base64');
+                require('fs').writeFileSync(`./ScreenShots/screenshot${Math.random()}.png`, image, 'base64');
             }
         );
     } finally {
